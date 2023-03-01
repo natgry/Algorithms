@@ -25,9 +25,6 @@ class Queue:
         # для случая, когда index 0 - конец очереди
         self.queue.insert(0, elem)
 
-        # для случая, когда index 0  - начало очереди
-        # self.queue_priority.append(elem)  # TODO реализовать метод enqueue
-
     def dequeue(self) -> Any:
         """
         Извлечение элемента из начала очереди. O(1)
