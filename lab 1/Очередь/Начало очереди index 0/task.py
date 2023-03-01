@@ -54,7 +54,6 @@ class Queue:
         if not isinstance(ind, int):
             raise TypeError("Индекс должен быть целочисленного типа")
 
-        # для случая, когда index -1  - начало очереди
         if len(self.queue) <= ind < 0:
             return IndexError("Индекс вне границ очереди")
         return self.queue[ind]  # TODO реализовать метод peek
