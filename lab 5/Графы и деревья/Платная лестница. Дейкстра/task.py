@@ -27,10 +27,10 @@ def create_stairway_graph(stairway: tuple[int]) -> nx.DiGraph:
 
     list_ = []
     last_step_to_go = len(stairway) - 1
-    for key, value in enumerate(stairway):
-        list_.append((key, key + 1, value))
-        if key != last_step_to_go:
-            list_.append((key, key + 2, stairway[key + 1]))
+    for i in range(len(stairway)):
+        list_.append((i, i + 1, stairway[i]))
+        if i != last_step_to_go:
+            list_.append((i, i + 2, stairway[i + 1]))
 
     stairway_graph.add_weighted_edges_from(list_)
     return stairway_graph
