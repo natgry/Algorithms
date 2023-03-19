@@ -26,8 +26,9 @@ def create_stairway_graph(stairway: tuple[int]) -> nx.DiGraph:
     stairway_graph = nx.DiGraph()
 
     list_ = []
-    last_step_to_go = len(stairway) - 1
-    for i in range(len(stairway)):
+    len_ = len(stairway)
+    last_step_to_go = len_ - 1
+    for i in range(len_):
         list_.append((i, i + 1, stairway[i]))
         if i != last_step_to_go:
             list_.append((i, i + 2, stairway[i + 1]))
