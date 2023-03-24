@@ -19,11 +19,9 @@ def get_cons_str(input_data: list[str]) -> str:
         letter_max_found = list(expected.keys())[list(expected.values()).index(max(expected.values()))]
         return letter_max_found
 
-    str_to_check = None
-    for i in range(0, len(input_data)):
-        row = input_data[i]
-        for j in range(0, len(row)):
-            x = row[i]
+    for i in range(0, 4):
+        for j in range(0, len(input_data)):
+            x = input_data[j][i]
             ...
            # str_to_check += row[i]
         get_max(str_to_check)
