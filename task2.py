@@ -25,8 +25,7 @@ def get_cons_str(input_data: list[str]) -> str:
             x = input_data[j][i]
             ...
             str_to_check += x
-        get_max(str_to_check)
-    x = str_to_check
+        result_str += get_max(str_to_check)
 
     return result_str
 
