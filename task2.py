@@ -1,3 +1,5 @@
+# not finished yet
+
 def get_cons_str(input_data: list[str]) -> str:
     """
     Функция реализует задачу консенсуса DNA ридов-считалку.
