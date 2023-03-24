@@ -10,7 +10,7 @@ def get_cons_str(input_data: list[str]) -> str:
     if not input_data:
         raise ValueError
 
-    result_str: str = None
+    result_str: str = ''
 
     def get_max(str_to_search):
         expected = {'A': 0, 'T': 0, 'G': 0, 'C': 0}
