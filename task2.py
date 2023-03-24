@@ -1,5 +1,3 @@
-# not finished yet
-
 def get_cons_str(input_data: list[str]) -> str:
     """
     Функция реализует задачу консенсуса DNA ридов-считалку.
@@ -36,3 +34,12 @@ if __name__ == '__main__':
         'ACAA'
     ]
     print(get_cons_str(input_data))  # ACTA
+    
+    
+    input_data = [
+        'ATTC',
+        'ACTC',
+        'AGCC',
+        'ACAA'
+    ]
+    print(get_cons_str(input_data))  # ACTС
