@@ -11,7 +11,6 @@ def get_cons_str(input_data: list[str]) -> str:
         raise ValueError
 
     result_str: str = None
-    my_str = 'ACCC'
 
     def get_max(str_to_search):
         expected = {'A': 0, 'T': 0, 'G': 0, 'C': 0}
