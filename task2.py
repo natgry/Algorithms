@@ -35,7 +35,6 @@ if __name__ == '__main__':
     ]
     print(get_cons_str(input_data))  # ACTA
     
-    
     input_data = [
         'ATTC',
         'ACTC',
